@@ -1,0 +1,61 @@
+/**
+ * SelectPanel
+ * ===========
+ *
+ *
+ */
+
+$color-handle = #A9487E;
+$size-spinner = 28px;
+
+.SelectPanel {
+
+	height: 100%;
+	// position: relative;
+
+	&__WaveSurfer {
+	}
+
+	&__Timeline {
+	}
+
+	&__Spinner {
+		position: absolute;
+		z-index: 100;
+		top: 'calc(50% - %s)' % $size-spinner;
+		left: 'calc(50% - %s)' % $size-spinner;
+		height: $size-spinner;
+		width: $size-spinner;
+		animation: rotate 0.8s infinite linear;
+		border: 8px solid $color-handle;
+		border-right-color: transparent;
+		border-radius: 50%;
+	}
+}
+
+@keyframes rotate {
+	0%    { transform: rotate(0deg); }
+	100%  { transform: rotate(360deg); }
+}
+
+$size-handle = 4px;
+
+.wavesurfer {
+
+	&-handle {
+		background-color: $color-handle;
+
+
+		&-start {
+			width: ($size-handle - 1px) !important;
+			max-width: ($size-handle - 1px) !important;
+			// left: - $handleWidth !important;
+		}
+
+		&-end {
+			width: $size-handle !important;
+			max-width: $size-handle !important;
+			left: 'calc(100% - (%s - 1px))' % $size-handle !important;
+		}
+	}
+}

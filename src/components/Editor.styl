@@ -1,0 +1,24 @@
+/**
+ * Editor
+ * ======
+ *
+ *
+ */
+
+
+$color-background = #DCDBDB;
+
+.Editor {
+  box-sizing: border-box;
+  background-color: $color-background;
+  height: 100%;
+  min-height: 200px; // -> see flext container
+
+
+  & > *, & > *::before, & > *::after {
+    box-sizing: inherit;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
