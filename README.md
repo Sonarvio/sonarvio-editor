@@ -23,5 +23,5 @@ render() {
 }
 ```
 
-A concrete example can be found [here](http://github.com/Sonarvio/sonarvio-editor/example).
+A concrete example can be found [here](https://github.com/Sonarvio/sonarvio-editor/blob/master/example/main.js).
 Just run 'node build' and checkout `http://localhost:10000`.
