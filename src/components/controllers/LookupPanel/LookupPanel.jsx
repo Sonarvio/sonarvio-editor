@@ -11,7 +11,7 @@ import './LookupPanel.styl'
 
 
 /**
- * 
+ *
  */
 export default class LookupPanel extends Component {
 
@@ -31,7 +31,8 @@ export default class LookupPanel extends Component {
 		return (
 			<div className="LookupPanel">
 				<p>Acoustic fingerprint matching is currently not available.</p>
-				<p>For more details checkout <a href={issueLink}>this issue</a>.</p>
+				<p>For more details checkout <a className="LookupPanel__Link"
+					href={issueLink} target="_blank">this issue</a>.</p>
 			</div>
 		)
 	}
